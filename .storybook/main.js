@@ -13,7 +13,9 @@ module.exports = {
   features: {
     storyStoreV7: true,
   },
-  define: {
-    'process.env': {},
+  async viteFinal(config, { configType }) {
+    return mergeConfig(config, {
+      define: { 'process.env': {} },
+    })
   },
 }
