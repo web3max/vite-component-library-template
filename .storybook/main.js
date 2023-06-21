@@ -13,4 +13,7 @@ module.exports = {
   features: {
     storyStoreV7: true,
   },
+  define: {
+    'process.env': {},
+  },
 }
